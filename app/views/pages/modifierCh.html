@@ -1,0 +1,63 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Modifier chèque</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Modifier Chéque
+			</div>
+			<div class="panel-body">
+				<form role="form">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label>Numéro</label>
+							<input class="form-control" placeholder="Numéro" ng-model="cheque.numero">
+						</div>
+						<div class="form-group">
+							<label>Date</label>
+							<input class="form-control" placeholder="Date" ng-model="cheque.date">
+						</div>
+						<div class="form-group">
+							<label>Source</label>
+							<input class="form-control" placeholder="Source" ng-model="cheque.source">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="form-group">
+								<label>Titulaire</label>
+								<input class="form-control" placeholder="Titulaire" ng-model="cheque.titulaire.nom">
+							</div>
+							<div class="form-group">
+								<label>Montant</label>
+								<div class="form-group input-group"> 
+									<span class="input-group-addon">$</span> 
+									<input class="form-control" type="text" ng-model="cheque.montant"> 
+									<span class="input-group-addon">.000</span> 
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Destination</label>
+								<input class="form-control" placeholder="Destination" ng-model="cheque.destination">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-9">
+							<button type="submit" id='btn-margin' ng-click="save()" class="btn btn-primary">modifier</button>
+							<button type="reset" id='btn-margin' class="btn btn-default">Reset</button>
+						</div>
+					</div>				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
